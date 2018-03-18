@@ -103,9 +103,9 @@
 		FC0D88A41FB14AE400725604 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				FC10777E205E21CA000E59CF /* Category */,
+				FC10652E1FBC33B8000ADB33 /* Utilities */,
 				FCB3EC411FB585880079695D /* View */,
-				FC52C5171FB2EEBB00EF30D6 /* UIView+HYDUIView.h */,
-				FC52C5181FB2EEBB00EF30D6 /* UIView+HYDUIView.m */,
 				FC0D88A51FB14B1200725604 /* CameraViewController.h */,
 				FC0D88A61FB14B1200725604 /* CameraViewController.m */,
 			);
@@ -119,6 +119,18 @@
 				FC1065301FBC4977000ADB33 /* YDAssetOpreration.m */,
 			);
 			name = Utilities;
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC10777E205E21CA000E59CF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FC52C5171FB2EEBB00EF30D6 /* UIView+HYDUIView.h */,
+				FC52C5181FB2EEBB00EF30D6 /* UIView+HYDUIView.m */,
+				FCCE63FA1FB938DA00E5BEFF /* UIImage+fixOrientation.h */,
+				FCCE63FB1FB938DA00E5BEFF /* UIImage+fixOrientation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		FC9CF24C1FB052A3004A76BF = {
@@ -187,13 +199,10 @@
 		FCB3EC411FB585880079695D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC10652E1FBC33B8000ADB33 /* Utilities */,
 				FCB3EC421FB585AA0079695D /* YDCamera.h */,
 				FCB3EC431FB585AA0079695D /* YDCamera.m */,
 				FCB3EC451FB58B390079695D /* YDCameraToolBar.h */,
 				FCB3EC461FB58B390079695D /* YDCameraToolBar.m */,
-				FCCE63FA1FB938DA00E5BEFF /* UIImage+fixOrientation.h */,
-				FCCE63FB1FB938DA00E5BEFF /* UIImage+fixOrientation.m */,
 				FCCE63FD1FB9397500E5BEFF /* YDImageType.h */,
 				FC45F9FE1FBE95CF009C5B47 /* YDPhotoButton.h */,
 				FC45F9FF1FBE95CF009C5B47 /* YDPhotoButton.m */,
