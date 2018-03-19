@@ -11,7 +11,7 @@
 
 @protocol YDCameraDelegate <NSObject>
 
--(void)unableUserCamera;
+-(void)unableUserCamera; 
 -(void)clickToolBackBtn;
 -(void)clickToolPhotoBtn:(UIImage *)image;
 
