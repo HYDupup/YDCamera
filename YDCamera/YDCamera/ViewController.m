@@ -12,7 +12,7 @@
 @interface ViewController ()<CameraViewControllerDelegate>
 
 @property (nonatomic,strong)UIImageView *imageview;
-
+@property (nonatomic,strong)UILabel *label;
 @end
 
 @implementation ViewController
@@ -26,6 +26,13 @@
     self.imageview.contentMode = UIViewContentModeScaleAspectFit;
     [self.view addSubview:self.imageview];
     
+    self.label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
+    self.label.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, [UIScreen mainScreen].bounds.size.height/2);
+    self.label.text = @"点击进入相机";
+    self.label.font = [UIFont systemFontOfSize:16.0f];
+    self.label.textColor = [UIColor blackColor];
+    self.label.textAlignment = NSTextAlignmentCenter;
+    [self.view addSubview:self.label];
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -38,6 +45,7 @@
 
 -(void)overCamera:(UIImage *)image{
     
+    self.label.hidden = YES;
     self.imageview.image = image;
     
 }
